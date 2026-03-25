@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_habitats"     android:icon="@drawable/ic_menu_habitats"    android:title="@string/nav_habitats"/>
+        <item android:id="@+id/nav_mon_habitat"  android:icon="@drawable/ic_menu_mon_habitat" android:title="@string/nav_mon_habitat"/>
+        <item android:id="@+id/nav_mes_requetes" android:icon="@drawable/ic_calendar"         android:title="@string/nav_calendrier"/>
+        <item android:id="@+id/nav_parametres"   android:icon="@drawable/ic_menu_parametres"  android:title="@string/nav_parametres"/>
+        <item android:id="@+id/nav_about"        android:icon="@drawable/ic_menu_habitats"    android:title="@string/nav_about"/>
+    </group>
+    <group>
+        <item android:id="@+id/nav_deconnexion"  android:icon="@drawable/ic_menu_logout"      android:title="@string/nav_deconnexion"/>
+    </group>
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#FFFFFF">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarCreateAccount" android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" android:background="#085041"
+        app:title="Créer un compte" app:titleTextColor="#FFFFFF" app:navigationIconTint="#FFFFFF"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="24dp">
+            <!-- STEP 1 -->
+            <LinearLayout android:id="@+id/layoutStep1" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Informations personnelles" android:textColor="#4CAF50"
+                    android:textStyle="bold" android:textSize="14sp" android:layout_marginBottom="16dp"/>
+                <EditText android:id="@+id/etFirstName" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Prénom"
+                    android:inputType="textPersonName" android:layout_marginBottom="12dp"/>
+                <EditText android:id="@+id/etLastName" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Nom"
+                    android:inputType="textPersonName" android:layout_marginBottom="12dp"/>
+                <EditText android:id="@+id/etEmail" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Email"
+                    android:inputType="textEmailAddress" android:layout_marginBottom="12dp"/>
+                <EditText android:id="@+id/etPassword" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Mot de passe (6 min)"
+                    android:inputType="textPassword" android:layout_marginBottom="12dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="12dp">
+                    <Spinner android:id="@+id/spCountryCode" android:layout_width="80dp"
+                        android:layout_height="wrap_content" android:layout_marginRight="8dp"/>
+                    <EditText android:id="@+id/etMobile" android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:layout_weight="1"
+                        android:hint="Numéro de mobile" android:inputType="phone"/>
+                </LinearLayout>
+                <Button android:id="@+id/btnCreateAccount" android:layout_width="match_parent"
+                    android:layout_height="48dp" android:text="Continuer"
+                    android:backgroundTint="#4CAF50" android:textColor="#FFFFFF"/>
+            </LinearLayout>
+            <!-- STEP 2 -->
+            <LinearLayout android:id="@+id/layoutStep2" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical"
+                android:visibility="gone">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Votre habitat" android:textColor="#4CAF50"
+                    android:textStyle="bold" android:textSize="14sp" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Renseignez les infos de votre logement" android:textColor="#888888"
+                    android:textSize="12sp" android:layout_marginBottom="16dp"/>
+                <EditText android:id="@+id/etFloor" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Étage (ex: 1)"
+                    android:inputType="number" android:layout_marginBottom="12dp"/>
+                <EditText android:id="@+id/etArea" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Surface en m² (ex: 45)"
+                    android:inputType="numberDecimal" android:layout_marginBottom="20dp"/>
+                <Button android:id="@+id/btnAddHabitat" android:layout_width="match_parent"
+                    android:layout_height="48dp" android:text="Terminer l'inscription"
+                    android:backgroundTint="#4CAF50" android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PowerHome</string>
+    <string name="login_title">Acceso</string>
+    <string name="identify_title">Identifícate</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="forgot_password">Contraseña olvidada</string>
+    <string name="btn_login_caps">ACCESO</string>
+    <string name="new_user">¿Eres nuevo en Powerhome?</string>
+    <string name="create_account">CREAR UNA CUENTA</string>
+    <string name="or">O</string>
+    <string name="facebook_continue">Continuar con Facebook</string>
+    <string name="identifiez_vous">Acceso</string>
+    <string name="mobile">Móvil</string>
+    <string name="mot_de_passe">Contraseña</string>
+    <string name="e_mail">Correo electrónico</string>
+    <string name="nom">Nombre</string>
+    <string name="pr_nom">Nombre de pila</string>
+    <string name="cr_er_un_nouveau_compte">Crea una nueva cuenta</string>
+    <string name="register_title">Crea una cuenta</string>
+    <string name="login_error">Nombre de usuario o contraseña incorrectos</string>
+</resources>

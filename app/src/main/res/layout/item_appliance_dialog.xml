@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:gravity="center_vertical"
+    android:padding="10dp" android:background="#F8F8F8"
+    android:layout_marginBottom="6dp" android:clickable="true" android:focusable="true">
+    <ImageView android:id="@+id/iv_appliance_icon"
+        android:layout_width="28dp" android:layout_height="28dp"
+        android:layout_marginRight="10dp"/>
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:orientation="vertical">
+        <TextView android:id="@+id/tv_appliance_name"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="#333333" android:textSize="13sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/tv_appliance_ref"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="#888888" android:textSize="11sp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/tv_appliance_watt"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="#4CAF50" android:textSize="12sp" android:textStyle="bold"/>
+</LinearLayout>
