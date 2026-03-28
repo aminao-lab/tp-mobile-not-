@@ -13,18 +13,18 @@ Ce fichier .md fait office de mini rapport pour comprendre le fonctionnement de 
 
 - Serveur PHP
   Chaque fichier PHP a un endpoint. Tous lisent les paramètres en GET, vérifient le token si besoin, et répondent en JSON
-  > db.php : fichier de base qui assure la connexion MySQL (inclus par tt les autres fichiers avec require)
-  > login.php : Vérifie email+password, génère un token, le retourne avec les infos user
-  > Register.php : Crée un compte (vérifie que l'email n'existe pas déjà et erreur 409 si doublon)
-  > addHabitat.php : Crée un habitat relié à un user (utilisé à l'inscription)
-  > getHabitats.php : Retourne tous les habitats de la résident avec leurs appareils
-  > getMyHabitat.php : Retourne l'habitat de l'utilisateur connecté (grâce à token) + le total wattage
-  > addAppliance.php : Ajoute un appareil à un habitat
-  > deleteAppliance.php : Supprime un appareil par son id
-  > updateHabitat.php : Modifie l'étage et la surface d'un habitat
-  > updateProfile.php : Change le mot de passe (vérifie l'ancien d'abord pour question de sécurité)
-  > getSlots.php : Retourne les créneaux d'un mois + indique si l'user a déjà un engagement
-  > commitSlot.php : Enregistre un engagement et calcule le bonus/malus en éco-coins
+  - db.php : fichier de base qui assure la connexion MySQL (inclus par tt les autres fichiers avec require)
+  - login.php : Vérifie email+password, génère un token, le retourne avec les infos user
+  - Register.php : Crée un compte (vérifie que l'email n'existe pas déjà et erreur 409 si doublon)
+  - addHabitat.php : Crée un habitat relié à un user (utilisé à l'inscription)
+  - getHabitats.php : Retourne tous les habitats de la résident avec leurs appareils
+  - getMyHabitat.php : Retourne l'habitat de l'utilisateur connecté (grâce à token) + le total wattage
+  - addAppliance.php : Ajoute un appareil à un habitat
+  - deleteAppliance.php : Supprime un appareil par son id
+  - updateHabitat.php : Modifie l'étage et la surface d'un habitat
+  - updateProfile.php : Change le mot de passe (vérifie l'ancien d'abord pour question de sécurité)
+  - getSlots.php : Retourne les créneaux d'un mois + indique si l'user a déjà un engagement
+  - commitSlot.php : Enregistre un engagement et calcule le bonus/malus en éco-coins
 - Application Android
   Dans les fichiers qui ont été créé, il y a 3 types de fichiers que nous avons créé :
 
