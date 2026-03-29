@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical" android:background="#F0F0F0">
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:background="#085041" android:padding="10dp">
-        <TextView android:id="@+id/tv_global_conso" android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:text="Consommation globale résidence : -- W"
-            android:textColor="#9FE1CB" android:textSize="12sp" android:gravity="center"/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_global_conso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consommation globale résidence : -- W"
+            android:textColor="@color/c_topbar_subtitle"
+            android:textSize="12sp"
+            android:gravity="center"/>
     </LinearLayout>
-    <ListView android:id="@+id/listHabitat" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:divider="@android:color/transparent"
-        android:dividerHeight="8dp" android:paddingTop="4dp" android:paddingLeft="8dp"
-        android:paddingRight="8dp" android:clipToPadding="false"/>
+
+    <ListView
+        android:id="@+id/listHabitat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:paddingTop="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:clipToPadding="false"/>
 </LinearLayout>

@@ -3,29 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/c_bg"
+    android:background="@color/primary"
     android:orientation="vertical"
     android:id="@+id/rootLogin">
+
     <com.google.android.material.appbar.MaterialToolbar
         android:paddingTop="10dp"
         android:id="@+id/toolbarLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="64dp"
-        android:background="@color/c_bg"
-        android:backgroundTint="@android:color/black"
+        android:background="@color/primary"
         app:navigationIcon="@drawable/ic_back_sized"
-        app:navigationIconTint="@android:color/white"
+        app:navigationIconTint="@color/c_topbar_icon"
         app:title="@string/create_account"
         app:titleCentered="true"
-        app:titleTextColor="@android:color/white" />
+        app:titleTextColor="@color/c_topbar_title" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
 
-        <!-- Whole content -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,7 +32,7 @@
             android:paddingStart="18dp"
             android:paddingTop="22dp"
             android:paddingEnd="18dp"
-            android:background="@android:color/white"
+            android:background="@color/c_bg"
             android:paddingBottom="22dp">
 
             <!-- LEFT: form -->
@@ -50,7 +49,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="18dp"
                     android:text="@string/identifiez_vous"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/c_title"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -66,7 +65,7 @@
                         android:layout_height="22dp"
                         android:layout_marginEnd="10dp"
                         android:src="@drawable/ic_mail_sized"
-                        app:tint="@color/gris" />
+                        app:tint="@color/c_field_icon" />
 
                     <EditText
                         android:id="@+id/etEmail"
@@ -79,15 +78,15 @@
                         android:inputType="textEmailAddress"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:textColor="@color/gris"
-                        android:textColorHint="@color/gris" />
+                        android:textColor="@color/c_text"
+                        android:textColorHint="@color/c_hint" />
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginStart="32dp"
-                    android:background="@color/gris" />
+                    android:background="@color/c_field_underline" />
 
                 <View
                     android:layout_width="match_parent"
@@ -105,7 +104,7 @@
                         android:layout_height="22dp"
                         android:layout_marginEnd="10dp"
                         android:src="@drawable/ic_lock_sized"
-                        app:tint="@color/gris" />
+                        app:tint="@color/c_field_icon" />
 
                     <EditText
                         android:id="@+id/etPassword"
@@ -118,15 +117,15 @@
                         android:inputType="textPassword"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:textColor="@color/gris"
-                        android:textColorHint="@color/gris" />
+                        android:textColor="@color/c_text"
+                        android:textColorHint="@color/c_hint" />
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginStart="32dp"
-                    android:background="@color/gris" />
+                    android:background="@color/c_field_underline" />
 
                 <TextView
                     android:id="@+id/tvForgot"
@@ -136,7 +135,7 @@
                     android:gravity="center_horizontal"
                     android:text="MOT DE PASSE OUBLIÉ ?"
                     android:textAllCaps="true"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/primary"
                     android:textSize="13sp"
                     android:textStyle="bold" />
 
@@ -144,13 +143,13 @@
                     android:onClick="login"
                     android:id="@+id/btnLogin"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="44dp"
                     android:layout_marginTop="16dp"
-                    android:backgroundTint="@color/orange"
+                    android:backgroundTint="@color/primary"
                     android:text="@string/create_account"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/c_btn_primary_text"
                     android:textStyle="bold"
-                    app:cornerRadius="2dp" />
+                    app:cornerRadius="50dp" />
             </LinearLayout>
 
             <!-- CENTER: divider + OU -->
@@ -166,7 +165,7 @@
                     android:layout_width="1dp"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@color/gris" />
+                    android:background="@color/c_divider" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -175,16 +174,17 @@
                     android:layout_marginBottom="10dp"
                     android:text="OU"
                     android:textAllCaps="true"
-                    android:textColor="@color/gris"
+                    android:textColor="@color/c_hint"
                     android:textStyle="bold" />
 
                 <View
                     android:layout_width="1dp"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@color/gris" />
+                    android:background="@color/c_divider" />
             </LinearLayout>
 
+            <!-- RIGHT: create account + Facebook -->
             <LinearLayout
                 android:layout_marginRight="10dp"
                 android:layout_width="0dp"
@@ -198,7 +198,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/new_user"
-                    android:textColor="@color/gris"
+                    android:textColor="@color/c_subtext"
                     android:textSize="16sp" />
 
                 <TextView
@@ -208,7 +208,7 @@
                     android:layout_marginTop="6dp"
                     android:text="@string/cr_er_un_nouveau_compte"
                     android:textAllCaps="true"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/primary"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -220,7 +220,7 @@
                     android:id="@+id/btnFacebook"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
-                    android:backgroundTint="@android:color/transparent"
+                    android:background="@android:color/transparent"
                     android:drawableStart="@drawable/ic_facebook_sized"
                     android:drawablePadding="10dp"
                     android:gravity="center_vertical"
@@ -228,10 +228,9 @@
                     android:paddingEnd="12dp"
                     android:text="@string/facebook_continue"
                     android:textAllCaps="false"
-                    android:textColor="@color/blue"
+                    android:textColor="@color/c_btn_fb_text"
                     android:textStyle="bold"
-                    android:background="@android:color/transparent"
-                    app:drawableTint="@color/blue" />
+                    app:drawableTint="@color/c_btn_fb_icon" />
             </LinearLayout>
 
         </LinearLayout>

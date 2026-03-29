@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Theme.PowerHome" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">#4CAF50</item >
-        <item name="colorPrimaryDark">#388E3C</item>
-        <item name="colorAccent">#4CAF50</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary_light</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorSecondary">@color/primary_light</item>
+        <item name="colorSecondaryVariant">@color/primary</item>
+        <item name="android:colorBackground">@color/c_bg</item>
+        <item name="colorOnPrimary">@color/c_btn_primary_text</item>
     </style>
 
     <style name="Theme.PowerHome.Drawer" parent="Theme.AppCompat.Light">
-        <item name="colorPrimary">#4CAF50</item>
-        <item name="colorPrimaryDark">#388E3C</item>
-        <item name="colorAccent">#4CAF50</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary_light</item>
     </style>
 </resources>

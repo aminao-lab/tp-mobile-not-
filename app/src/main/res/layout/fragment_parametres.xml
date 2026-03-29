@@ -1,80 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F0F0F0">
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:orientation="vertical" android:padding="12dp">
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:orientation="horizontal" android:gravity="center_vertical"
-            android:background="@drawable/bg_card_habitat" android:padding="14dp" android:layout_marginBottom="14dp">
-            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
-                android:text="Mes éco-coins" android:textColor="#4CAF50" android:textStyle="bold" android:textSize="14sp"/>
-            <TextView android:id="@+id/tv_ecocoins" android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="0 éco-coins" android:textColor="#222222" android:textStyle="bold" android:textSize="14sp"/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Éco-coins banner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_card_habitat"
+            android:padding="14dp"
+            android:layout_marginBottom="14dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mes éco-coins"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/tv_ecocoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 éco-coins"
+                android:textColor="@color/c_text"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
         </LinearLayout>
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="PROFIL" android:textSize="11sp" android:textColor="#4CAF50"
-            android:textStyle="bold" android:layout_marginBottom="6dp" android:layout_marginLeft="4dp"/>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:orientation="vertical" android:background="@drawable/bg_card_habitat" android:layout_marginBottom="14dp">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:orientation="horizontal" android:gravity="center_vertical" android:padding="14dp">
-                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
-                    android:text="Nom" android:textColor="#555555" android:textSize="14sp"/>
-                <TextView android:id="@+id/tv_nom" android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="-" android:textColor="#222222" android:textSize="14sp"/>
+
+        <!-- Section PROFIL -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFIL"
+            android:textSize="11sp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="4dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_habitat"
+            android:layout_marginBottom="14dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nom"
+                    android:textColor="@color/c_subtext"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/tv_nom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/c_text"
+                    android:textSize="14sp"/>
             </LinearLayout>
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:orientation="horizontal" android:gravity="center_vertical" android:padding="14dp">
-                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
-                    android:text="Prénom" android:textColor="#555555" android:textSize="14sp"/>
-                <TextView android:id="@+id/tv_prenom" android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="-" android:textColor="#222222" android:textSize="14sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/c_divider"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Prénom"
+                    android:textColor="@color/c_subtext"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/tv_prenom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/c_text"
+                    android:textSize="14sp"/>
             </LinearLayout>
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:orientation="horizontal" android:gravity="center_vertical" android:padding="14dp">
-                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
-                    android:text="Email" android:textColor="#555555" android:textSize="14sp"/>
-                <TextView android:id="@+id/tv_email" android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="-" android:textColor="#222222" android:textSize="14sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/c_divider"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email"
+                    android:textColor="@color/c_subtext"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/c_text"
+                    android:textSize="14sp"/>
             </LinearLayout>
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:orientation="horizontal" android:gravity="center_vertical" android:padding="14dp">
-                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
-                    android:text="Téléphone" android:textColor="#555555" android:textSize="14sp"/>
-                <TextView android:id="@+id/tv_phone" android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="-" android:textColor="#222222" android:textSize="14sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/c_divider"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Téléphone"
+                    android:textColor="@color/c_subtext"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/c_text"
+                    android:textSize="14sp"/>
             </LinearLayout>
         </LinearLayout>
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="COMPTE" android:textSize="11sp" android:textColor="#4CAF50"
-            android:textStyle="bold" android:layout_marginBottom="6dp" android:layout_marginLeft="4dp"/>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:orientation="vertical" android:background="@drawable/bg_card_habitat" android:layout_marginBottom="14dp">
-            <LinearLayout android:id="@+id/ll_change_password" android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:orientation="horizontal"
-                android:gravity="center_vertical" android:padding="14dp"
-                android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackground">
-                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
-                    android:text="Changer le mot de passe" android:textColor="#555555" android:textSize="14sp"/>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="›" android:textColor="#AAAAAA" android:textSize="18sp"/>
+
+        <!-- Section COMPTE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPTE"
+            android:textSize="11sp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="4dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_habitat"
+            android:layout_marginBottom="14dp">
+            <LinearLayout
+                android:id="@+id/ll_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Changer le mot de passe"
+                    android:textColor="@color/c_text"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="›"
+                    android:textColor="@color/c_hint"
+                    android:textSize="18sp"/>
             </LinearLayout>
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
-            <LinearLayout android:id="@+id/ll_change_language" android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:orientation="horizontal"
-                android:gravity="center_vertical" android:padding="14dp"
-                android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackground">
-                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
-                    android:text="Langue" android:textColor="#555555" android:textSize="14sp"/>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="Français  ›" android:textColor="#AAAAAA" android:textSize="14sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/c_divider"/>
+            <LinearLayout
+                android:id="@+id/ll_change_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="14dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Langue"
+                    android:textColor="@color/c_text"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Français  ›"
+                    android:textColor="@color/c_hint"
+                    android:textSize="14sp"/>
             </LinearLayout>
         </LinearLayout>
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="PowerHome v1.0.0" android:textColor="#BBBBBB"
-            android:textSize="12sp" android:gravity="center" android:layout_marginTop="4dp"/>
+
+        <!-- Version -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PowerHome v1.0.0"
+            android:textColor="@color/c_hint"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
     </LinearLayout>
 </ScrollView>

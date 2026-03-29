@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:padding="20dp">
 
-    <!-- En-tête résident -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:textColor="#000000"
+                android:textColor="@color/c_title"
                 android:textStyle="bold" />
 
             <TextView
@@ -32,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
-                android:textColor="#888888"
+                android:textColor="@color/c_subtext"
                 android:layout_marginTop="2dp" />
         </LinearLayout>
     </LinearLayout>
@@ -40,7 +39,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#DDDDDD"
+        android:background="@color/c_divider"
         android:layout_marginBottom="8dp" />
 
     <TextView
@@ -49,24 +48,21 @@
         android:text="Équipements"
         android:textSize="14sp"
         android:textStyle="bold"
-        android:textColor="#4CAF50"
+        android:textColor="@color/primary"
         android:layout_marginBottom="4dp" />
 
-    <!-- Liste des appareils -->
     <LinearLayout
         android:id="@+id/ll_dialog_appliances"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" />
 
-    <!-- Total -->
-
     <TextView
         android:id="@+id/tv_dialog_total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="13sp"
-        android:textColor="#333333"
+        android:textColor="@color/c_text"
         android:textStyle="bold" />
 
 </LinearLayout>

@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/c_bg"
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -13,10 +14,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="64dp"
-        android:background="@android:color/black"
+        android:background="@color/primary"
         app:title="@string/app_name"
         app:titleCentered="true"
-        app:titleTextColor="@android:color/white"
+        app:titleTextColor="@color/c_topbar_title"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -24,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
+        android:textColor="@color/c_text"
         android:textAlignment="center"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

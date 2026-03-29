@@ -1,39 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="gris">#CAC9C9</color>
-    <color name="orange">#F08A24</color>
-    <color name="blue">#3B5998</color>
+    <!-- ================================================ -->
+    <!--  PowerHome — Palette harmonieuse (teal éco-tech) -->
+    <!-- ================================================ -->
+
+    <!-- Couleurs de marque -->
+    <color name="primary">#1A7F6E</color>
+    <color name="primary_dark">#115749</color>
+    <color name="primary_light">#2DB89E</color>
+    <color name="primary_surface">#E6F7F4</color>
+
+    <!-- Anciens alias conservés pour compatibilité -->
+    <color name="gris">#9CA3AF</color>
+    <color name="orange">#F59E0B</color>
+    <color name="blue">#1A7F6E</color>
 
     <!-- Background -->
-    <color name="c_bg">#0F172A</color>
+    <color name="c_bg">#F8FAFB</color>
 
     <!-- Topbar -->
-    <color name="c_topbar_bg">#1F1F1F</color>
+    <color name="c_topbar_bg">#1A7F6E</color>
     <color name="c_topbar_title">#FFFFFF</color>
     <color name="c_topbar_icon">#FFFFFF</color>
+    <color name="c_topbar_subtitle">#A5E3D8</color>
 
-    <color name="c_title">#7A7A7A</color>
-    <color name="c_text">#222222</color>
-    <color name="c_subtext">#8A8A8A</color>
-    <color name="c_hint">#B0B0B0</color>
+    <!-- Textes -->
+    <color name="c_title">#111827</color>
+    <color name="c_text">#374151</color>
+    <color name="c_subtext">#6B7280</color>
+    <color name="c_hint">#9CA3AF</color>
 
-    <!-- Fields -->
-    <color name="c_field_underline">#AFAFAF</color>
-    <color name="c_field_icon">#B0B0B0</color>
+    <!-- Champs de saisie -->
+    <color name="c_field_underline">#D1D5DB</color>
+    <color name="c_field_icon">#9CA3AF</color>
 
-    <!-- Links -->
-    <color name="c_link">#2F5EA5</color>
+    <!-- Liens -->
+    <color name="c_link">#1A7F6E</color>
 
-    <!-- Divider -->
-    <color name="c_divider">#E0E0E0</color>
+    <!-- Séparateurs -->
+    <color name="c_divider">#E5E7EB</color>
 
-    <!-- Primary button -->
-    <color name="c_btn_primary_bg">#687299</color>
+    <!-- Bouton principal -->
+    <color name="c_btn_primary_bg">#1A7F6E</color>
     <color name="c_btn_primary_text">#FFFFFF</color>
-    <color name="c_topbar_subtitle">#9CA3AF</color>
 
-    <!-- Facebook button -->
+    <!-- Bouton Facebook -->
     <color name="c_btn_fb_bg">#FFFFFF</color>
-    <color name="c_btn_fb_text">#2F5EA5</color>
-    <color name="c_btn_fb_icon">#2F5EA5</color>
+    <color name="c_btn_fb_text">#1A7F6E</color>
+    <color name="c_btn_fb_icon">#1A7F6E</color>
+
+    <!-- Statuts -->
+    <color name="c_success">#1A7F6E</color>
+    <color name="c_warning">#F59E0B</color>
+    <color name="c_error">#EF4444</color>
+    <color name="c_info_bg">#E6F7F4</color>
+
+    <!-- Badge énergie / éco-coins -->
+    <color name="c_energy">#F59E0B</color>
+    <color name="c_energy_bg">#FEF3C7</color>
 </resources>

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="160dp"
-    android:background="#4CAF50"
+    android:background="@color/primary"
     android:gravity="bottom"
     android:orientation="vertical"
     android:padding="16dp">
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/nav_header_email"
         android:text="powerhome@iut.fr"
-        android:textColor="#DDDDDD"
+        android:textColor="@color/c_topbar_subtitle"
         android:textSize="13sp" />
 
 </LinearLayout>
