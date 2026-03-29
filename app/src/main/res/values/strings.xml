@@ -61,7 +61,7 @@
     <string name="finish_register">Terminer l\'inscription</string>
     <!-- Dialogs -->
     <string name="about_title">À propos</string>
-    <string name="about_text">PowerHome Application de gestion d\'une résidence participative.  IUT Paris Rives de Seine — 2026. Etudiants : AUBRY Alyssa, SALHI Ilyes, OUTTALEB Amina</string>
+    <string name="about_text">PowerHome Application de gestion d\'une résidence participative.  IUT Paris Rives de Seine — 2026. Développeurs : AUBRY Alyssa, SALHI Ilyes, OUTTALEB Amina</string>
     <string name="close_btn">Fermer</string>
     <string name="server_error">Serveur inaccessible</string>
     <string name="all_fields_required">Tous les champs sont requis</string>
